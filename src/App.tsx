@@ -96,7 +96,7 @@ function Overview() {
             <Link to="/tones" className="ov-card">
                 <span className="ov-count">60</span>
                 <span className="ov-name">Tones & synonyms</span>
-                <span className="ov-detail">Every tone CAT passages are written in, with synonyms, a plain meaning and an example of how it reads.</span>
+                <span className="ov-detail">Every tone CAT passages are written in, with synonyms, a plain meaning and example sentences that show how each reads.</span>
             </Link>
         </div>
         <Group label="How to use it">
@@ -164,7 +164,7 @@ function Tones() {
         t.synonyms.some(s => s.toLowerCase().includes(query.toLowerCase())));
     return <>
         <Group label="60 CAT tones and their synonyms" heading>
-            <Paragraph>Tone questions are won on vocabulary. Each entry gives the tone, its plain meaning, the synonyms CAT likes to confuse it with, and an example of how the tone reads in a passage. Treat the synonyms as near-neighbours, not perfect substitutes: irony is not sarcasm, and critical is not disparaging. CAT options exploit exactly these fine shades.</Paragraph>
+            <Paragraph>Tone questions are won on vocabulary. Each entry gives the tone, its plain meaning, the synonyms CAT likes to confuse it with, and two or more example sentences written in that tone. Where tones are easy to confuse, the examples set them side by side so the difference shows. Treat the synonyms as near-neighbours, not perfect substitutes: irony is not sarcasm, and critical is not disparaging. CAT options exploit exactly these fine shades.</Paragraph>
             <TextField label="Search a tone or synonym" value={query} onChange={setQuery} />
         </Group>
         <div className="tone-list">
@@ -172,7 +172,7 @@ function Tones() {
                 <h3 className="tone-name">{t.tone}</h3>
                 <p className="tone-meaning">{t.meaning}</p>
                 <p className="tone-syn"><span className="tone-syn-label">Synonyms: </span>{t.synonyms.join(', ')}</p>
-                <p className="tone-example">{t.example}</p>
+                <ul className="tone-examples">{t.examples.map((e, i) => <li key={i} className="tone-example">{e}</li>)}</ul>
             </article>)}
         </div>
     </>;
