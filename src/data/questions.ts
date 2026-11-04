@@ -372,18 +372,18 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 25,
-    type: 'Assumption',
-    stimulus: `A corporate trainer advises: 'To make meetings shorter, remove the chairs. In our workshops, teams that held standing meetings finished in half the time with decisions of equal quality.'`,
-    question: "The trainer's advice assumes which of the following?",
+    type: 'Inference',
+    stimulus: `Over five years, a state's public libraries extended evening hours and added free Wi-Fi. Membership rose by 35 percent, but the number of books borrowed per member fell. Library staff say most of the new members are students who come to study their own material in the reading rooms.`,
+    question: "All of the following can be inferred from the information above EXCEPT:",
     options: [
-      "The time saved in standing meetings is not lost later in revisiting poorly considered decisions",
-      "Standing is physically possible for all meeting participants",
-      "People think faster when they stand",
-      "Most corporate meetings are longer than necessary"
+      "Some of the growth in membership has not been accompanied by more book borrowing.",
+      "The fall in borrowing per member does not, by itself, show that the libraries are being used less.",
+      "Evening hours and Wi-Fi may have drawn in users who rarely borrow books.",
+      "The extended hours caused the total number of books borrowed across the state to decline."
     ],
-    answer: 0,
-    explanation: "The workshop evidence shows equal decision quality at the time; the advice to shorten real meetings assumes the speed is genuine and not deferred, which is option A. Option B is a practical condition, not something the reasoning relies on; options C and D are not required.",
-    difficulty: 'Moderate'
+    answer: 3,
+    explanation: "Membership grew 35 percent while borrowing per member fell. Total borrowing could therefore have fallen, stayed flat or even risen, and nothing links any change to the extended hours. The other three options are cautious readings the facts allow. This is the EXCEPT format, which CAT has used in its inference questions.",
+    difficulty: 'Hard'
   },
   {
     id: 26,
@@ -417,33 +417,33 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 28,
-    type: 'Strengthen',
-    stimulus: `A public policy scholar argues that fines are a poor tool for disciplining taxi aggregators: 'Companies treat the fines as a cost of doing business, passing them to consumers in higher fares, while the practices that attract fines continue unchanged.'`,
-    question: "Which of the following, if true, most strengthens the scholar's argument?",
+    type: 'Inference',
+    stimulus: `After a rule required restaurants to display calorie counts, a study of 400 outlets found that average calories per order fell by 3 percent at chain restaurants and did not change at standalone restaurants. Several chains also reformulated dishes to cut calories around the time the rule came in. Standalone restaurants made no menu changes.`,
+    question: "Which one of the following can be most reasonably inferred?",
     options: [
-      "The total value of fines levied on aggregators has risen each year",
-      "After a city made repeated violations grounds for suspending an aggregator's operating licence, complaint rates against aggregators in that city fell by half",
-      "Consumers are largely unaware of the fines paid by aggregators",
-      "Taxi fares in the city have risen faster than inflation"
+      "Displaying calorie counts lowers the calories ordered at all restaurants.",
+      "The fall at chain restaurants may be partly due to menu changes rather than to customers choosing differently.",
+      "Customers of standalone restaurants ignore calorie counts.",
+      "Food at chain restaurants is generally healthier than food at standalone restaurants."
     ],
     answer: 1,
-    explanation: "The argument is that fines fail because they are priced in. Evidence that a non-monetary penalty, licence suspension, changed behaviour where fines did not supports the claim that fines specifically are ineffective. Rising fines and fares are consistent with the argument but do not test the mechanism as directly.",
-    difficulty: 'Hard'
+    explanation: "Two things changed at chains at the same time, labels and recipes, so the fall cannot be credited wholly to customer behaviour. Option A generalises, C reads 'no change in orders' as 'customers ignore the labels' and D compares healthiness, which the study does not.",
+    difficulty: 'Moderate'
   },
   {
     id: 29,
-    type: 'Assumption',
-    stimulus: `A health ministry justifies taxing sugar-sweetened beverages: 'Mexico's soda tax cut purchases of taxed drinks by an average of 7 percent in two years. India's consumption patterns are similar, so a comparable tax here will yield comparable public-health benefits.'`,
-    question: "The ministry's argument assumes which of the following?",
+    type: 'Inference',
+    stimulus: `A survey of 2,000 first-year MBA students found that those who had worked for at least two years before joining reported higher stress during placement season than those who came straight from college. The same experienced students were, however, more likely to receive multiple offers.`,
+    question: "Which one of the following can be most reasonably inferred from the survey?",
     options: [
-      "Reduced purchases of taxed drinks translate into improved health outcomes rather than substitution toward equally unhealthy untaxed products",
-      "Mexico's tax was politically popular",
-      "India's beverage industry will not reformulate its products",
-      "Sugar consumption in India is higher than in Mexico"
+      "Work experience makes candidates more employable but also more anxious.",
+      "Among the surveyed students, higher stress during placements did not stop experienced students from getting more offers.",
+      "Students who come straight from college are less ambitious about placements.",
+      "Stress during placement season reduces the number of offers a student receives."
     ],
-    answer: 0,
-    explanation: "The conclusion is about public-health benefits, but the evidence is about purchases. The argument needs a bridge from lower purchases to better health, which substitution could sever; option A supplies it. Popularity, reformulation and relative consumption levels are not required.",
-    difficulty: 'Hard'
+    answer: 1,
+    explanation: "The survey only reports two co-occurring facts. Option B restates them without adding a cause. Option A asserts that experience causes both outcomes, C reverses the stated relation without evidence, and D brings in ambition, which the survey never measures.",
+    difficulty: 'Moderate'
   },
   {
     id: 30,
@@ -477,17 +477,17 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 32,
-    type: 'Assumption',
-    stimulus: `A startup founder predicts: 'Our vernacular-language AI tutor will dominate the market. It speaks eleven Indian languages, and there are hundreds of millions of students who prefer learning in their mother tongue.'`,
-    question: "The founder's prediction depends on assuming that:",
+    type: 'Inference',
+    stimulus: `Critics say short-video platforms have shrunk attention spans. A psychologist replies that every new medium, from the novel to television, drew the same complaint, and that measured attention on long tasks such as reading has shown no consistent decline across generations. What has changed, she suggests, is the number of tempting alternatives available at any moment.`,
+    question: "The psychologist would most likely agree with which one of the following?",
     options: [
-      "students who prefer learning in their mother tongue will find that preference decisive in choosing a tutoring product",
-      "the tutor's translations are perfectly accurate",
-      "competitors cannot build multilingual tutors",
-      "the market for English-medium tutoring will shrink"
+      "Short-video platforms are harmless to concentration.",
+      "Complaints about new media are always baseless.",
+      "Difficulty in sustaining attention may owe more to abundant distractions than to a reduced capacity to attend.",
+      "Reading long texts holds attention better than watching short videos."
     ],
-    answer: 0,
-    explanation: "From 'many prefer their mother tongue' to 'we will dominate', the argument needs the preference to translate into purchase decisions, which is option A. Perfect accuracy, competitor inability and English-market decline are all stronger than the argument requires.",
+    answer: 2,
+    explanation: "She denies a decline in capacity and points to a rise in distractions, which is exactly option C. Option A overreaches since she never calls the platforms harmless, B turns 'drew the same complaint' into 'always baseless', and D compares media, which she does not do.",
     difficulty: 'Moderate'
   },
   {
@@ -507,18 +507,18 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 34,
-    type: 'Strengthen',
-    stimulus: `A sports scientist argues that India's recent Olympic medal gains owe more to private coaching academies than to government sports schools: 'Most recent medallists trained at private academies for the majority of their developmental years.'`,
-    question: "Which of the following, if true, most strengthens the scientist's argument?",
+    type: 'Inference',
+    stimulus: `In a city where taxi fares are fixed by law, drivers report that their earnings per hour are highest on rainy days and lowest on clear afternoons, although fares are the same on both. Ride requests roughly double when it rains.`,
+    question: "Which one of the following best explains the drivers' reports?",
     options: [
-      "Government sports schools receive more funding per athlete than private academies",
-      "Athletes who moved from government schools to private academies improved their national rankings within two seasons, while comparable athletes who stayed showed no such improvement",
-      "Private academies employ several former Olympic coaches",
-      "Participation in district-level sport has risen steadily"
+      "With more requests, drivers spend less time idle between rides, so their earnings per hour rise even though fares are fixed.",
+      "Drivers work longer hours when it rains.",
+      "Passengers tip more generously when it rains.",
+      "Fixed fares guarantee that earnings are the same every day."
     ],
-    answer: 1,
-    explanation: "A within-athlete comparison showing improvement after switching, against a matched group that stayed, isolates the academies' effect and upgrades a mere correlation into evidence of contribution. Funding levels, coach pedigrees and participation trends do not test the causal claim.",
-    difficulty: 'Hard'
+    answer: 0,
+    explanation: "Earnings per hour depend on fare per ride and on how many rides fit in an hour. Fares are fixed, but doubled demand shortens idle time, so A explains the gap. Longer hours would not change earnings per hour, tips are not mentioned, and D contradicts the drivers' reports.",
+    difficulty: 'Moderate'
   },
   {
     id: 35,
@@ -537,47 +537,47 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 36,
-    type: 'Assumption',
-    stimulus: `A logistics company argues it should be allowed to operate delivery drones in cities: 'Our drones have logged a million autonomous flight hours abroad with a safety record exceeding that of delivery scooters, so permitting them here will make urban deliveries safer.'`,
-    question: "The company's argument assumes that:",
+    type: 'Inference',
+    stimulus: `A city's metro authority reserved the first coach on every train for women. A year later it reported that complaints of harassment on trains had fallen by 40 percent. A commuter group points out that the authority counted complaints received on its helpline, and that the helpline number was changed halfway through the year.`,
+    question: "Which one of the following is best supported by the information above?",
     options: [
-      "the safety record achieved abroad would persist under this country's air traffic, weather and urban density conditions",
-      "delivery scooters are the most dangerous vehicles on urban roads",
-      "drone deliveries will be cheaper than scooter deliveries",
-      "regulators abroad were competent"
+      "Incidents of harassment on the metro fell by about 40 percent.",
+      "The reported 40 percent fall is weak evidence that incidents of harassment fell, because what was counted may have changed with the helpline.",
+      "The women-only coach has failed to reduce harassment.",
+      "The authority altered its figures deliberately to show success."
     ],
-    answer: 0,
-    explanation: "The argument transports a foreign safety record into a domestic prediction, which requires the conditions to be sufficiently similar, as option A states. Relative danger of scooters, cost and foreign regulators' competence are not load-bearing.",
-    difficulty: 'Moderate'
+    answer: 1,
+    explanation: "The authority measured complaints, not incidents, and the channel for complaints changed. So the fall may reflect reporting, not harassment, and B is the careful reading. Option A accepts the figure at face value. C and D go further than the commuter group's point, which questions the measure, not the coach and not the authority's honesty.",
+    difficulty: 'Hard'
   },
   {
     id: 37,
-    type: 'Weaken',
-    stimulus: `A tech columnist declares: 'The era of the smartphone is ending. Sales of smartphones fell for the second consecutive year, while shipments of AI-powered wearable devices doubled.'`,
-    question: "Which of the following, if true, most weakens the columnist's claim?",
+    type: 'Inference',
+    stimulus: `Folklorists in a coastal community found the same flood story told with three endings: villagers are saved by a boatman, by a goddess, or by the sea's retreat. Older residents mostly tell the boatman version, and younger residents increasingly tell the sea's-retreat version. Residents who have moved to the city tell all three interchangeably.`,
+    question: "Which one of the following is best supported by the information above?",
     options: [
-      "Wearable devices still depend on paired smartphones for most of their computing and connectivity",
-      "Younger consumers replace their phones more often than older consumers",
-      "Smartphone profit margins remain higher than wearable margins",
-      "Some analysts predict augmented-reality glasses will eventually replace phones"
+      "The goddess version is the oldest of the three.",
+      "Which version is told appears to vary with generation, and seems less fixed for people living away from the community.",
+      "The boatman in the story was a real person.",
+      "Younger residents have stopped believing in the goddess."
     ],
-    answer: 0,
-    explanation: "The claim is that the smartphone era is ending, with wearables as the successor. If wearables are accessories tethered to phones rather than substitutes, rising wearable shipments are evidence of the phone's centrality, not its demise. The other options do not address the substitution thesis.",
+    answer: 1,
+    explanation: "The facts give a generational pattern and a looser pattern among those who left, which is B. Nothing dates the goddess version, nothing speaks to the boatman's reality, and a version being told less says nothing about belief.",
     difficulty: 'Moderate'
   },
   {
     id: 38,
-    type: 'Strengthen',
-    stimulus: `An urban planner argues that Bengaluru's traffic problem is primarily a land-use problem: 'Commuting times grew fastest in corridors where offices and housing were permitted to develop far apart, and slowest where mixed-use zoning kept them interleaved.'`,
-    question: "Which of the following, if true, most strengthens the planner's argument?",
+    type: 'Inference',
+    stimulus: `Researchers who reviewed sixty years of court records in one country found that harsher sentencing laws were followed by fewer reported thefts over the next two years, but the effect had disappeared by the fifth year. Police budgets rose during the same period.`,
+    question: "All of the following are consistent with the findings above EXCEPT:",
     options: [
-      "Bengaluru's vehicle registrations have doubled in a decade",
-      "In corridors that later adopted mixed-use zoning, commuting-time growth decelerated relative to similar corridors that did not change their zoning",
-      "Other Indian cities with mixed-use zoning also suffer severe congestion",
-      "Metro rail expansion has reduced traffic on several corridors"
+      "The short-term fall in thefts may have had causes other than the harsher laws.",
+      "The data do not demonstrate any lasting deterrent effect of harsher laws.",
+      "Reported thefts and actual thefts may differ.",
+      "Harsher sentencing laws have been shown never to deter theft."
     ],
-    answer: 1,
-    explanation: "A before-after comparison within corridors that changed zoning, against unchanged comparators, tests the land-use claim directly. Vehicle growth and metro effects are consistent with many explanations; other cities' congestion does not isolate zoning.",
+    answer: 3,
+    explanation: "The findings show a short-lived fall followed by no effect, with a rival cause in the form of larger police budgets. They cannot show that harsher laws never deter, since a two-year fall was in fact observed. Options A to C are all things the data leave open or support.",
     difficulty: 'Hard'
   },
   {
@@ -597,33 +597,33 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 40,
-    type: 'Assumption',
-    stimulus: `A bank's strategy head argues: 'We should close half our rural branches. Rural customers have adopted mobile banking at record rates, and most branch transactions can now be completed on our app.'`,
-    question: "The strategy head's recommendation assumes which of the following?",
+    type: 'Inference',
+    stimulus: `Historians note that the monsoon let sailors predict wind direction by season, so ships from Gujarat reached East Africa in winter and returned in summer. Trading communities therefore settled for months at ports on both coasts, and merchants who could not travel with the monsoon hired local agents.`,
+    question: "All of the following can be inferred from the passage EXCEPT:",
     options: [
-      "The services rural customers use branches for but cannot complete on the app are not important enough to those customers to justify the branches' cost",
-      "All rural customers own smartphones",
-      "Mobile networks in rural areas are perfectly reliable",
-      "Competitor banks are also closing rural branches"
+      "Seasonal winds shaped when voyages could take place.",
+      "Some merchants relied on agents because their own timing did not fit the wind pattern.",
+      "Traders stayed at ports for long periods partly because of the sailing calendar.",
+      "The monsoon made voyages between Gujarat and East Africa safer than voyages in any other sea."
     ],
-    answer: 0,
-    explanation: "The move from 'most transactions are digital' to 'close half the branches' requires that the residual branch-only needs are dispensable, which option A captures. Universal smartphone ownership and perfect networks are stronger than needed; competitors are irrelevant.",
+    answer: 3,
+    explanation: "The passage says the monsoon made sailing predictable. It says nothing about safety, and nothing comparing the route with any other sea. The other three options follow directly from the winds, the months-long stays and the hiring of agents.",
     difficulty: 'Hard'
   },
   {
     id: 41,
-    type: 'Weaken',
-    stimulus: `A ministry white paper concludes that work-from-home has made India's tech workers more productive: 'Output per employee at firms permitting remote work is 15 percent higher than at firms that require office attendance.'`,
-    question: "Which of the following, if true, most weakens the white paper's conclusion?",
+    type: 'Inference',
+    stimulus: `A hospital found that patients discharged on Fridays were readmitted within a week more often than patients discharged on other days. Fewer pharmacists and social workers are on duty at the hospital over weekends.`,
+    question: "All of the following are consistent with the information above EXCEPT:",
     options: [
-      "Remote workers report longer working hours",
-      "Firms that permit remote work are disproportionately large, well-capitalised companies that were more productive than office-requiring firms before remote work existed",
-      "Some employees find home environments distracting",
-      "Office rents have fallen in technology hubs"
+      "Weekend staffing may affect the support patients get after discharge.",
+      "Patients discharged on Fridays may be sicker on average than other patients.",
+      "Friday discharges are readmitted solely because the hospital is understaffed on weekends.",
+      "Readmission rates may differ by the day of discharge."
     ],
-    answer: 1,
-    explanation: "The conclusion infers remote work raises productivity from a cross-firm comparison. Option B reverses the causation: already-productive firms are the ones that can permit remote work, so the 15 percent gap need not be caused by the policy. The other options are compatible with the conclusion.",
-    difficulty: 'Moderate'
+    answer: 2,
+    explanation: "The data permit staffing as one explanation but do not exclude others, such as sicker patients. 'Solely' turns a possible cause into the only cause, which the facts cannot support. The remaining options are all open possibilities.",
+    difficulty: 'Hard'
   },
   {
     id: 42,
@@ -642,32 +642,32 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 43,
-    type: 'Assumption',
-    stimulus: `A hospital chain defends its prices: 'Our heart-surgery packages cost 40 percent more than the charitable hospital across town, but our survival rates are five percentage points higher. Patients are paying for outcomes, not overheads.'`,
-    question: "The chain's defence assumes that:",
+    type: 'Inference',
+    stimulus: `Two cities of similar size tried to cut plastic bag use. City P charged five rupees per bag, and use of single-use bags fell by 70 percent. City Q banned single-use bags and fined shopkeepers, and use of single-use bags fell by 50 percent, though sales of thicker reusable plastic bags in City Q rose sharply.`,
+    question: "Which one of the following is best supported by the information above?",
     options: [
-      "the difference in survival rates reflects the quality of care rather than differences in the patients each hospital treats",
-      "heart surgery is the most profitable service at the chain",
-      "patients can easily compare survival rates across hospitals",
-      "the charitable hospital receives government subsidies"
+      "The 50 percent fall in single-use bags in City Q may overstate the fall in City Q's total plastic use.",
+      "Charging for bags is more effective than banning them in every city.",
+      "Shopkeepers in City Q resisted the ban more than shopkeepers in City P.",
+      "Residents of City P care more about the environment than residents of City Q."
     ],
     answer: 0,
-    explanation: "The defence reads the survival gap as purchased quality. If the chain simply treats lower-risk patients, the gap is selection, not care, so the argument requires option A. Profitability, comparability and subsidies are not essential to the reasoning.",
+    explanation: "The rise in thicker reusable bags suggests that some plastic use shifted rather than disappeared, which is what A says. B generalises from two cities, C invents resistance and D invents attitudes. None of these is in the data.",
     difficulty: 'Hard'
   },
   {
     id: 44,
-    type: 'Strengthen',
-    stimulus: `A fisheries scientist warns that the recent practice of releasing juvenile fish into depleted rivers is counterproductive: 'Stocked rivers show no recovery in wild fish populations five years on.'`,
-    question: "Which of the following, if true, most strengthens the scientist's warning?",
+    type: 'Inference',
+    stimulus: `Early economists left household work out of national income because it earns no wage. Later scholars observed that if a family hires a cook and a nanny, their pay is counted in national income, but if a family member does the same tasks nothing is recorded. National income, they argued, partly measures how many activities have moved into the market, not how much is produced.`,
+    question: "The scholars' reasoning most strongly supports which one of the following inferences?",
     options: [
-      "Stocking programmes are popular with fishing communities",
-      "Juvenile fish raised in hatcheries lack the predator-avoidance behaviours of wild-raised fish, and survive in rivers at a fraction of the rate assumed when the programmes were designed",
-      "River depletion is caused mainly by sand mining",
-      "Some rivers recovered without any stocking"
+      "Households produce more than markets do.",
+      "A rise in measured national income can occur without any rise in actual output.",
+      "Household work should be paid a wage by the state.",
+      "Hiring domestic help is wasteful for families."
     ],
     answer: 1,
-    explanation: "Option B supplies a mechanism explaining the failure the scientist reports, converting correlation into supported causation. Popularity does not bear on effectiveness; sand mining offers an alternative cause of depletion, not of restocking failure; unstocked recoveries are consistent but less directly probative.",
+    explanation: "If tasks shift from unpaid family work to paid work, the same output is newly counted, so measured income rises without more being produced. That is B. Option A compares totals the scholars never compare, C proposes a policy, and D makes a value judgment.",
     difficulty: 'Hard'
   },
   {
@@ -687,48 +687,48 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 46,
-    type: 'Assumption',
-    stimulus: `A streaming platform plans to commission only sequels and adaptations next year: 'Original series are a lottery. Our adaptations of bestselling novels retain subscribers at twice the rate of original productions.'`,
-    question: "The platform's plan assumes which of the following?",
+    type: 'Inference',
+    stimulus: `An airline reports that its on-time arrival rate rose from 72 to 85 percent after it lengthened the scheduled flight time on its busiest routes by ten minutes. Passenger surveys show no change in satisfaction with punctuality.`,
+    question: "Which one of the following is most strongly suggested by the information above?",
     options: [
-      "The retention advantage of adaptations will persist as their share of the platform's catalogue grows",
-      "Bestselling novels are easy to acquire",
-      "Subscribers prefer familiar stories to unfamiliar ones in every genre",
-      "Original series are never profitable"
+      "Lengthening scheduled times made the aircraft fly faster.",
+      "Passengers do not care whether flights arrive on time.",
+      "The improved on-time rate may reflect easier targets rather than faster actual journeys.",
+      "The airline's operational efficiency has declined."
     ],
-    answer: 0,
-    explanation: "The observed advantage comes from adaptations chosen selectively; scaling them to the whole catalogue assumes the edge survives dilution, which is option A. Acquisition ease, universal genre preferences and the impossibility of profitable originals are all stronger than required.",
-    difficulty: 'Hard'
+    answer: 2,
+    explanation: "A flight counts as on time against its schedule. If the schedule gets ten minutes longer, more flights qualify without any change in actual speed, so C fits. Options A and B conflict with the logic or go beyond the survey, and D has no support either way.",
+    difficulty: 'Moderate'
   },
   {
     id: 47,
-    type: 'Weaken',
-    stimulus: `A real-estate analyst argues: 'Office property values in Mumbai's business district will keep rising. Vacancy rates have fallen every quarter for two years, and rents are at record highs.'`,
-    question: "Which of the following, if true, most weakens the analyst's projection?",
+    type: 'Inference',
+    stimulus: `After a fourth operator entered a country's mobile market, data prices fell by 30 percent in the first year. In the next two years prices stopped falling, even though the new operator's subscriber base kept growing. Two older operators merged in the third year.`,
+    question: "Which one of the following is the most reasonable reading of the information above?",
     options: [
-      "Several multinational tenants have signed long leases in the district",
-      "Much of the fall in vacancy reflects large firms consolidating into fewer floors as hybrid work becomes permanent, and several new office towers are scheduled to add supply next year",
-      "Residential property values in the district have also risen",
-      "Interest rates have remained stable"
+      "The merger may have weakened the competitive pressure that the new entrant had created.",
+      "A new entrant has no lasting effect on prices.",
+      "Prices will begin to rise again in the fourth year.",
+      "The new operator has been unprofitable."
     ],
-    answer: 1,
-    explanation: "The projection reads falling vacancy as durable demand growth. Option B reframes the fall as consolidation, shrinking demand per tenant, and adds coming supply, attacking both legs of the optimism. Long leases (option A) support the analyst; residential prices and rates are peripheral.",
+    answer: 0,
+    explanation: "Prices stopped falling after the merger while the entrant kept growing, so a reduction in competition is a plausible reading. Option B overstates 'no lasting effect', C forecasts, and D speaks about profit, for which there is no information.",
     difficulty: 'Hard'
   },
   {
     id: 48,
-    type: 'Strengthen',
-    stimulus: `A nutritionist claims that the rise in childhood myopia in Indian cities is driven by reduced outdoor time rather than by screens: 'The steepest rises in myopia have occurred in cities where children's daily outdoor play has fallen below an hour, regardless of how much screen time those children report.'`,
-    question: "Which of the following, if true, most strengthens the nutritionist's claim?",
+    type: 'Inference',
+    stimulus: `Vernacular newspapers in colonial India often carried advertisements for imported soaps in readers' own languages, using local deities and proverbs. Scholars suggest these advertisements did more than sell a product: they taught readers that foreign goods could sit comfortably within familiar moral worlds.`,
+    question: "Which one of the following is LEAST supported by the scholars' view?",
     options: [
-      "Myopia rates are lower in rural areas",
-      "In a trial, children randomly assigned an extra hour of daily outdoor play developed myopia at lower rates than controls with identical screen exposure",
-      "Screen brightness settings have improved over the decade",
-      "Parents of myopic children report high screen use"
+      "Advertisers adapted their messages to the cultural references of readers.",
+      "Advertising can shape attitudes to a product beyond persuading people to buy it.",
+      "Vernacular newspapers refused to carry advertisements written in English.",
+      "Readers were encouraged to see imported goods as compatible with their own values."
     ],
-    answer: 1,
-    explanation: "A randomised trial holding screen exposure constant and varying outdoor time isolates the outdoor variable, providing the cleanest support for the nutritionist's attribution. Rural rates and parental reports do not separate the two candidates; brightness settings are a red herring.",
-    difficulty: 'Hard'
+    answer: 2,
+    explanation: "Nothing in the scholars' view concerns newspapers refusing English advertisements. The other three options restate what the scholars say about adaptation, wider influence and compatibility with local values.",
+    difficulty: 'Moderate'
   },
   {
     id: 49,
@@ -747,17 +747,17 @@ export const questions: VAQuestion[] = [
   },
   {
     id: 50,
-    type: 'Weaken',
-    stimulus: `A development economist argues that cash transfers to women reduce household poverty more than equivalent transfers to men: 'In trial villages, transfers given to mothers raised child nutrition and school attendance far more than transfers given to fathers.'`,
-    question: "Which of the following, if true, most weakens the economist's argument for preferring transfers to women?",
+    type: 'Inference',
+    stimulus: `'A translation is never a mere carrying across of meaning,' writes a critic. 'A translator who renders every idiom literally produces a text no reader can trust. A translator who replaces every idiom with a local equivalent produces a text no reader can place. Good translation lives in the decisions between these two failures.'`,
+    question: "The critic would most likely agree with which one of the following?",
     options: [
-      "In the trial villages, mothers who received transfers were more likely to be literate than fathers who received them",
-      "Cash transfers are cheaper to administer than in-kind subsidies",
-      "In trial districts where transfers were labelled 'children's allowance', fathers spent them on children at the same rates as mothers did",
-      "Men in the trial villages earned more on average than women"
+      "Literal translation is preferable to adaptation.",
+      "Translators should avoid idioms altogether.",
+      "A translator's skill lies in judging when to keep the source's flavour and when to adapt it.",
+      "Local equivalents make a translated text more trustworthy."
     ],
     answer: 2,
-    explanation: "The policy conclusion is that the recipient's identity drives the outcome. Option C shows that if a simple label makes fathers spend identically, the design of the transfer, not the gender of the recipient, carries the effect, undercutting the case for gender targeting. Option A offers a confound, but literacy differences between recipient groups are speculative without more evidence.",
-    difficulty: 'Hard'
+    explanation: "The critic calls both extremes failures and locates quality in the decisions between them, which is C. Options A and D each endorse one extreme, and B ignores the point that idioms must be handled, not avoided.",
+    difficulty: 'Moderate'
   }
 ];
