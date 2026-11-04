@@ -16,13 +16,13 @@ export const questions: VAQuestion[] = [
     stimulus: `Cities that have introduced congestion pricing have typically seen air quality improve within the first year. Opponents of Delhi's proposed congestion charge argue that because Delhi's pollution is driven substantially by crop burning in neighbouring states, the charge will fail to clean Delhi's air.`,
     question: "Which of the following can be inferred from the statements above?",
     options: [
+      "The opponents believe that a congestion charge addresses only vehicle-related pollution within the city",
       "Congestion pricing has never improved air quality in any city",
       "Delhi's air quality is worse than that of cities that introduced congestion pricing",
-      "The opponents believe that a congestion charge addresses only vehicle-related pollution within the city",
       "Crop burning in neighbouring states is the sole cause of Delhi's pollution"
     ],
-    answer: 2,
-    explanation: "The opponents' argument presumes the charge affects only in-city vehicle emissions, which is why they cite an external source it cannot touch. Option A contradicts the first sentence; options B and D go beyond anything stated.",
+    answer: 0,
+    explanation: "The opponents' argument presumes the charge affects only in-city vehicle emissions, which is why they cite an external source it cannot touch. Option B contradicts the first sentence; options C and D go beyond anything stated.",
     difficulty: 'Moderate'
   },
   {
@@ -32,12 +32,12 @@ export const questions: VAQuestion[] = [
     question: "The CEO's argument assumes which of the following?",
     options: [
       "AI tutors are cheaper to operate than producing recorded lectures",
-      "Higher retention of material leads to higher course completion rates",
       "Students prefer live tutors to recorded lectures",
-      "The firm's competitors will not adopt similar technology"
+      "The firm's competitors will not adopt similar technology",
+      "Higher retention of material leads to higher course completion rates"
     ],
-    answer: 1,
-    explanation: "The argument moves from 'learn at own pace, retain more' to 'completion rates will rise'. That inference requires a link between retention and completion, which is exactly what option B supplies. Cost, preference and competitors are not required by the reasoning.",
+    answer: 3,
+    explanation: "The argument moves from 'learn at own pace, retain more' to 'completion rates will rise'. That inference requires a link between retention and completion, which is exactly what option D supplies. Cost, preference and competitors are not required by the reasoning.",
     difficulty: 'Moderate'
   },
   {
@@ -46,13 +46,13 @@ export const questions: VAQuestion[] = [
     stimulus: `Health authorities in a coastal district noted that households using RO water purifiers had significantly fewer cases of waterborne disease than households relying on municipal taps. They concluded that distributing subsidised RO purifiers would reduce disease across the district.`,
     question: "Which of the following, if true, most weakens the health authorities' conclusion?",
     options: [
+      "Households that bought RO purifiers also had better sanitation and healthcare access",
       "RO purifiers remove beneficial minerals along with contaminants",
-      "Households that bought RO purifiers were on average wealthier and also had access to better sanitation and healthcare",
-      "Municipal water in the district fails safety tests more often than state standards allow",
-      "Some households maintain their purifiers poorly, reducing effectiveness"
+      "Municipal water in the district fails safety tests more often than state standards permit",
+      "Some households maintain their purifiers poorly, which reduces how well they work"
     ],
-    answer: 1,
-    explanation: "The conclusion rests on a correlation between purifier use and less disease. Option B supplies a confounding variable: the same households have better sanitation and healthcare, which could account for the outcome without purifiers. Options A and D are side-effects that do not break the link; option C supports intervention.",
+    answer: 0,
+    explanation: "The conclusion rests on a correlation between purifier use and less disease. Option A supplies a confounding variable: the same households have better sanitation and healthcare, which could account for the outcome without purifiers. Options B and D are side-effects that do not break the link; option C supports intervention.",
     difficulty: 'Moderate'
   },
   {
@@ -62,12 +62,12 @@ export const questions: VAQuestion[] = [
     question: "Which of the following, if true, most strengthens the government's claim?",
     options: [
       "Farmers' union surveys report higher satisfaction with the new system",
-      "Fertiliser consumption per hectare remained constant while the number of registered beneficiary accounts receiving duplicate payments fell sharply",
       "The state's fertiliser imports declined over the same period",
-      "Other states are considering adopting the same system"
+      "Fertiliser use per hectare stayed constant while duplicate beneficiary payments fell sharply",
+      "Other states are considering adopting the same system as this state"
     ],
-    answer: 1,
-    explanation: "The claim is that leakage, not usage, fell. Option B shows consumption steady while duplicate payments collapsed, directly tying the outgo fall to eliminated leakage. Satisfaction surveys and imitation by other states do not establish leakage reduction; falling imports could indicate lower usage instead.",
+    answer: 2,
+    explanation: "The claim is that leakage, not usage, fell. Option C shows consumption steady while duplicate payments collapsed, directly tying the outgo fall to eliminated leakage. Satisfaction surveys and imitation by other states do not establish leakage reduction; falling imports could indicate lower usage instead.",
     difficulty: 'Hard'
   },
   {
@@ -78,11 +78,11 @@ export const questions: VAQuestion[] = [
     options: [
       "Electric buses are slower than diesel buses",
       "The environmental gains from electrification were offset by higher emissions from private vehicles",
-      "Operational constraints of the new fleet may have contributed to longer commutes",
-      "The city should have expanded its metro rail instead"
+      "The city should have expanded its metro rail instead",
+      "Operational constraints of the new fleet may have contributed to longer commutes"
     ],
-    answer: 2,
-    explanation: "The passage links reduced peak frequency, caused by charging cycles, to rising commute times, which supports option C's hedged claim. Option A confuses speed with frequency; option B asserts an offset that is not measured; option D is a recommendation the data cannot support.",
+    answer: 3,
+    explanation: "The passage links reduced peak frequency, caused by charging cycles, to rising commute times, which supports option D's hedged claim. Option A confuses speed with frequency; option B asserts an offset that is not measured; option C is a recommendation the data cannot support.",
     difficulty: 'Moderate'
   },
   {
@@ -91,12 +91,12 @@ export const questions: VAQuestion[] = [
     stimulus: `A venture capitalist defended her fund's exclusive focus on founders under thirty: 'Every transformative technology company of the last fifty years was founded by someone in their twenties, so youth is where the outsized returns are.'`,
     question: "The venture capitalist's argument depends on assuming that:",
     options: [
-      "founders over thirty are incapable of building technology companies",
       "the pattern among past transformative companies will persist into the period in which the fund invests",
+      "founders over thirty are incapable of building technology companies",
       "young founders work longer hours than older founders",
       "the fund's limited partners prefer young founders"
     ],
-    answer: 1,
+    answer: 0,
     explanation: "The argument projects a historical pattern onto future investments; without the assumption that the pattern persists, past founding ages are irrelevant to where future returns lie. The other options assert more than the argument needs.",
     difficulty: 'Hard'
   },
@@ -106,13 +106,13 @@ export const questions: VAQuestion[] = [
     stimulus: `An economics columnist argues: 'India's quick-commerce sector, which promises ten-minute grocery delivery, is fundamentally unsound. Its dark stores lose money on every order, and no amount of scale can fix a business that loses money on each unit it sells.'`,
     question: "Which of the following, if true, most weakens the columnist's argument?",
     options: [
-      "Several quick-commerce firms have recently raised large funding rounds",
-      "In comparable retail formats, per-order losses narrowed and then turned positive as order density per store rose, because fixed store costs were spread over more deliveries",
-      "Customers report high satisfaction with ten-minute delivery",
-      "Grocery margins in India are thinner than in most other markets"
+      "Comparable retail formats saw per-order losses turn positive as store order volumes rose",
+      "Several quick-commerce firms have recently raised large funding rounds from global investors",
+      "Customers report high satisfaction with ten-minute delivery in the cities served",
+      "Grocery margins in India are thinner than in most other large markets"
     ],
-    answer: 1,
-    explanation: "The columnist's premise is that per-unit losses are structural, immune to scale. Option B shows per-order economics improving with density precisely because scale spreads fixed costs, attacking the premise directly. Funding rounds and satisfaction do not address unit economics; thin margins support the columnist.",
+    answer: 0,
+    explanation: "The columnist's premise is that per-unit losses are structural, immune to scale. Option A shows per-order economics improving with density precisely because scale spreads fixed costs, attacking the premise directly. Funding rounds and satisfaction do not address unit economics; thin margins support the columnist.",
     difficulty: 'Hard'
   },
   {
@@ -121,13 +121,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A linguistics professor argues that the dominance of English in Indian higher education harms first-generation students: 'Students schooled in regional languages consistently underperform in English-medium entrance examinations, even in subjects like mathematics where language should be peripheral.'`,
     question: "Which of the following, if true, most strengthens the professor's argument?",
     options: [
-      "Regional-language schools often have fewer resources than English-medium schools",
-      "When the same mathematics examination was administered in translation to a matched sample, the performance gap between regional-language and English-medium students narrowed by more than half",
-      "English proficiency correlates strongly with income in urban India",
+      "Regional-language schools often have fewer resources than English-medium schools do",
+      "English proficiency correlates strongly with household income in urban India",
+      "A matched sample's performance gap narrowed by over half when the same maths exam was given in translation",
       "Most competitive examinations in India are offered only in English and Hindi"
     ],
-    answer: 1,
-    explanation: "The professor claims the language of instruction itself handicaps students in even non-verbal subjects. A controlled translation experiment in which the gap narrows isolates language as the cause, directly strengthening the argument. Option A offers an alternative explanation, which weakens rather than strengthens.",
+    answer: 2,
+    explanation: "The professor claims the language of instruction itself handicaps students, even in non-verbal subjects. A controlled translation experiment in which the gap narrows isolates language as the cause. The resources option offers an alternative explanation, which weakens the claim.",
     difficulty: 'Hard'
   },
   {
@@ -136,13 +136,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A study of civil services found that officers who had served in the districts were significantly more likely to be rated effective administrators than officers who had spent their careers in state capitals. The study's authors caution that postings are not assigned randomly.`,
     question: "Which of the following is best supported by the study and its authors' caution?",
     options: [
-      "District service makes officers better administrators",
       "The observed link between district service and effectiveness may reflect which officers are chosen for district postings rather than the effect of the postings themselves",
+      "District service makes officers better administrators",
       "Officers in state capitals are less talented than those in districts",
       "Posting assignments in the civil services are arbitrary"
     ],
-    answer: 1,
-    explanation: "The caution about non-random assignment flags selection effects: effectiveness might cause the posting rather than result from it. Option B captures exactly that. Option A ignores the caution; options C and D overstate or misstate it.",
+    answer: 0,
+    explanation: "The caution about non-random assignment flags selection effects: effectiveness might cause the posting rather than result from it. Option A captures exactly that. Option B ignores the caution; options C and D overstate or misstate it.",
     difficulty: 'Hard'
   },
   {
@@ -166,13 +166,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A recruitment platform reports that job postings requiring 'excellent communication skills in English' attract three times as many applicants as equivalent postings without the phrase. It concludes that candidates are strongly drawn to roles that emphasise communication.`,
     question: "Which of the following, if true, most calls the platform's conclusion into question?",
     options: [
-      "Postings with the phrase were disproportionately for higher-paying roles in metropolitan cities",
       "Some applicants do not read job descriptions carefully",
+      "Postings with the phrase were disproportionately for higher-paying roles in metropolitan cities",
       "The platform's user base has grown rapidly",
       "Roles emphasising teamwork are also popular among applicants"
     ],
-    answer: 0,
-    explanation: "The conclusion attributes the applicant surplus to the phrase. Option A offers an alternative cause: those postings were better-paid metro roles, which attract applicants regardless of wording. The other options do not break the attribution.",
+    answer: 1,
+    explanation: "The conclusion attributes the applicant surplus to the phrase. Option B offers an alternative cause: those postings were better-paid metro roles, which attract applicants regardless of wording. The other options do not break the attribution.",
     difficulty: 'Moderate'
   },
   {
@@ -182,12 +182,12 @@ export const questions: VAQuestion[] = [
     question: "Which of the following is best supported by the information above?",
     options: [
       "Efficiency standards caused the entire decline in consumption per household",
-      "Total residential electricity consumption for cooling necessarily fell over the decade",
       "The decline in per-household consumption may be explained by technology adopted in response to regulation",
+      "Total residential electricity consumption for cooling necessarily fell over the decade",
       "Inverter compressors are cheaper to manufacture than conventional ones"
     ],
-    answer: 2,
-    explanation: "The two attributions are compatible: standards mandated the technology that reduced consumption, and option C states only that modest combined claim. Option A overclaims causation; option B confuses per-household decline with total consumption, which could rise with twice as many households; option D is unsupported.",
+    answer: 1,
+    explanation: "The two attributions are compatible: standards mandated the technology that reduced consumption, and option B states only that modest combined claim. Option A overclaims causation; option C confuses per-household decline with total consumption, which could rise with twice as many households; option D is unsupported.",
     difficulty: 'Hard'
   },
   {
@@ -197,12 +197,12 @@ export const questions: VAQuestion[] = [
     question: "Which of the following, if true, most strengthens the historian's argument?",
     options: [
       "The 1918 pandemic killed more people in India than in any other country",
-      "Municipalities that suffered the heaviest influenza mortality were the first and the most generous funders of sanitation projects",
-      "Sanitation technology improved considerably after 1918",
-      "Germ theory had been accepted in European medical schools decades before 1918"
+      "Sanitation technology improved considerably in the years after 1918",
+      "Germ theory had been accepted in European medical schools decades before 1918",
+      "The worst-hit municipalities were the earliest and most generous funders of sanitation"
     ],
-    answer: 1,
-    explanation: "The argument links the pandemic to the funding shift. If the worst-hit municipalities funded first and most, the pandemic is tied to the behaviour by dosage, which strongly supports causation. Better technology (option C) offers a rival explanation; options A and D are not relevant to the municipal response.",
+    answer: 3,
+    explanation: "The argument links the pandemic to the funding shift. If the worst-hit municipalities funded first and most, the pandemic is tied to the behaviour by dosage, which strongly supports causation. Better technology (option B) offers a rival explanation; options A and C are not relevant to the municipal response.",
     difficulty: 'Hard'
   },
   {
@@ -211,13 +211,13 @@ export const questions: VAQuestion[] = [
     stimulus: `An investor newsletter argues: 'Gold will underperform equities over the next decade. In every ten-year period since 1980 when real interest rates were positive, equities beat gold, and central banks now signal that real rates will stay positive.'`,
     question: "The newsletter's argument assumes that:",
     options: [
-      "central banks' signals about future policy are a reliable guide to actual future real rates",
       "gold has never outperformed equities in any decade",
+      "central banks' signals about future policy are a reliable guide to actual future real rates",
       "equities are always riskier than gold",
       "inflation will remain low for the next decade"
     ],
-    answer: 0,
-    explanation: "The historical regularity is conditional on real rates staying positive; to carry the conclusion, the signal that they will stay positive must be dependable, which is option A. Option D is close but not required: low inflation is neither necessary nor sufficient for positive real rates. Options B and C are extreme claims the argument does not need.",
+    answer: 1,
+    explanation: "The historical regularity is conditional on real rates staying positive; to carry the conclusion, the signal that they will stay positive must be dependable, which is option B. Option D is close but not required: low inflation is neither necessary nor sufficient for positive real rates. Options A and C are extreme claims the argument does not need.",
     difficulty: 'Hard'
   },
   {
@@ -226,13 +226,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A state education department credits its free laptop scheme for a rise in Class 12 pass rates, noting that pass rates rose from 74 to 81 percent in the three years after laptops were distributed to all government-school students.`,
     question: "Which of the following, if true, most weakens the department's claim?",
     options: [
-      "Many students use the laptops primarily for entertainment",
-      "Over the same three years, the state's evaluation board moved to a lenient grading rubric and lowered the pass mark for two subjects",
-      "Private schools in the state, which received no laptops, saw pass rates rise by a similar margin",
-      "Teacher vacancies in the state remained high throughout the period"
+      "Many students use the laptops mainly for entertainment rather than study",
+      "Private schools in the state, which received no laptops, already had pass rates above 90 percent",
+      "Teacher vacancies in the state remained high throughout the period",
+      "The evaluation board moved to a lenient rubric and lowered the pass mark in two subjects"
     ],
-    answer: 1,
-    explanation: "Option B attacks causation directly: the measured outcome was made easier to achieve, so the rise need not reflect learning at all. Option C is also relevant, but private schools may differ systematically from government schools, making the comparison weaker than the rubric change, which applies to the very measure cited. Options A and D do not break the link.",
+    answer: 3,
+    explanation: "Option D attacks causation directly: the measure itself became easier to meet, so the rise need not reflect learning at all. Option B compares levels of pass rates, not the change, and so does not touch the claim. Options A and C describe weaknesses in the scheme that do not break the link between laptops and the rise.",
     difficulty: 'Hard'
   },
   {
@@ -256,13 +256,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A traffic safety researcher argues that Delhi's odd-even vehicle rationing did not meaningfully reduce crashes: 'Total crashes in rationing months were statistically indistinguishable from crashes in non-rationing months.'`,
     question: "Which of the following, if true, most strengthens the researcher's argument?",
     options: [
-      "During rationing months, average speeds on arterial roads were no higher than in other months",
-      "Rationing reduced total vehicle-kilometres travelled by roughly a quarter, while crashes per vehicle-kilometre rose slightly",
-      "Public transport ridership increased during rationing months",
-      "Most crashes in Delhi involve two-wheelers, which were exempt from rationing"
+      "Average arterial road speeds during rationing months were no higher than in other months",
+      "Public transport ridership rose during rationing months",
+      "Rationing cut vehicle-kilometres by about a quarter, yet crashes per vehicle-kilometre rose slightly",
+      "Delhi's registered vehicle count rose steadily over the decade"
     ],
-    answer: 1,
-    explanation: "The researcher claims rationing did not reduce crashes. Option B shows exposure fell sharply yet the crash rate per unit of exposure rose, meaning the policy was worse than neutral per kilometre driven, powerfully supporting the conclusion. Option D partially explains the aggregate but leaves open that car crashes fell; option A is consistent but weak.",
+    answer: 2,
+    explanation: "The researcher claims rationing did not reduce crashes. Option C shows exposure fell sharply yet the crash rate per unit of exposure rose, so the policy looks worse than neutral per kilometre driven. Option A is consistent with the claim but adds little. Options B and D do not bear on crashes.",
     difficulty: 'Hard'
   },
   {
@@ -286,19 +286,19 @@ export const questions: VAQuestion[] = [
     stimulus: `A fintech CEO argues: 'Our credit-scoring algorithm, which uses mobile-phone metadata, is fairer than traditional credit scores because it gives loans to millions who have no formal credit history.'`,
     question: "Which of the following, if true, most weakens the CEO's claim that the algorithm is fairer?",
     options: [
-      "Traditional credit scoring excludes anyone without a repayment history",
-      "The algorithm approves loans at systematically higher interest rates for borrowers from poorer regions, who are also the most likely to lack credit histories",
-      "Mobile-phone penetration in rural areas has risen sharply",
-      "The firm's loan default rate is lower than the industry average"
+      "Traditional credit scoring excludes almost anyone without a prior repayment history on record",
+      "Mobile-phone penetration in rural areas has risen sharply over the past five years",
+      "The firm's loan default rate is lower than the industry average across its portfolio",
+      "The algorithm charges systematically higher rates to borrowers from poorer regions, who are the most likely to lack credit histories"
     ],
-    answer: 1,
-    explanation: "The fairness claim rests on inclusion of the previously excluded. Option B shows the included group is charged systematically worse terms along a dimension of disadvantage, undercutting 'fairer' even though inclusion is real. Option A supports the claim's premise; options C and D are irrelevant to fairness.",
+    answer: 3,
+    explanation: "The fairness claim rests on inclusion of the previously excluded. Option D shows the included group is charged systematically worse terms along a dimension of disadvantage, undercutting 'fairer' even though inclusion is real. Option A supports the claim's premise; options B and C are irrelevant to fairness.",
     difficulty: 'Hard'
   },
   {
     id: 20,
     type: 'Inference',
-    stimulus: `In a famous experiment, diners at a buffet with plates two inches smaller in diameter served themselves roughly 20 percent less food and reported equal satisfaction. The researchers concluded that plate size is a powerful, unnoticed lever on consumption.`,
+    stimulus: `In a famous experiment, diners at a buffet with plates two inches smaller in diameter served themselves roughly 20 percent less food and reported equal satisfaction. The researchers concluded that plate size is a powerful lever on consumption.`,
     question: "Which of the following is most strongly supported by the passage?",
     options: [
       "Diners were unaware that their plates were smaller",
@@ -316,13 +316,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A district administration announced it will raise immunisation coverage by sending reminder messages to parents' phones, citing a pilot in which reminded parents were 15 percent more likely to complete their children's vaccination schedules.`,
     question: "The district's plan rests on which of the following assumptions?",
     options: [
-      "The pilot's participants are representative of the district's parents in the factors that determine response to reminders",
       "Reminders are cheaper than door-to-door vaccination drives",
       "Parents who ignore reminders are opposed to vaccination",
-      "Mobile phone ownership is universal in the district"
+      "Mobile phone ownership is universal in the district",
+      "The pilot's participants are representative of the district's parents in the factors that determine response to reminders"
     ],
-    answer: 0,
-    explanation: "Generalising from a pilot to the district requires that the pilot's results transfer, which is option A. The plan does not need reminders to be the cheapest method, does not presume resisters are ideological, and does not require universal ownership, only enough reach.",
+    answer: 3,
+    explanation: "Generalising from a pilot to the district requires that the pilot's results transfer, which is option D. The plan does not need reminders to be the cheapest method, does not presume resisters are ideological, and does not require universal ownership, only enough reach.",
     difficulty: 'Moderate'
   },
   {
@@ -331,13 +331,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A popular science writer claims: 'Bilingual children are better at multitasking. Studies show that bilinguals outperform monolinguals on tasks that require switching between rules, because managing two languages exercises the brain's control systems.'`,
     question: "Which of the following, if true, most weakens the writer's claim?",
     options: [
-      "Some bilingual children struggle with vocabulary in both languages",
-      "In the cited studies, bilingual children were largely drawn from immigrant families whose higher motivation and parental involvement independently predict executive-function performance",
-      "Rule-switching tasks are poor measures of real-world multitasking",
+      "Some bilingual children struggle with vocabulary in both of their languages",
+      "Bilingual children in the studies came mostly from families with high parental involvement, itself linked to better executive function",
+      "Several of the studies of bilingual children were conducted in schools in a single city",
       "Adults who learn a second language also show gains on rule-switching tasks"
     ],
     answer: 1,
-    explanation: "The causal chain runs from bilingualism through exercised control systems to better switching. Option B supplies a confounder, family background, that could produce the correlation without the claimed mental exercise. Option C attacks measurement rather than the causal claim; options A and D are consistent with or irrelevant to it.",
+    explanation: "The causal chain runs from bilingualism, through exercised control systems, to better switching. Option B supplies a confounder, family background, that could produce the gap without the claimed mental exercise. Option C names a feature of the studies that says nothing about their results. Options A and D are consistent with the claim or irrelevant to it.",
     difficulty: 'Hard'
   },
   {
@@ -347,12 +347,12 @@ export const questions: VAQuestion[] = [
     question: "Which of the following is best supported by the statements above?",
     options: [
       "The sea walls were not worth building",
-      "Lower storm damage does not by itself establish that protective investment was economically justified",
       "The previous storm a decade earlier was more severe",
+      "Lower storm damage does not by itself establish that protective investment was economically justified",
       "Insurance premiums in the city rose because of the sea walls"
     ],
-    answer: 1,
-    explanation: "The passage separates avoided damage from total cost and finds the latter higher, which supports the general caution in option B. Option A overreaches, since future storms and non-monetary benefits are unconsidered; options C and D assert causes the passage does not give.",
+    answer: 2,
+    explanation: "The passage separates avoided damage from total cost and finds the latter higher, which supports the general caution in option C. Option A overreaches, since future storms and non-monetary benefits are unconsidered; options B and D assert causes the passage does not give.",
     difficulty: 'Moderate'
   },
   {
@@ -361,13 +361,13 @@ export const questions: VAQuestion[] = [
     stimulus: `An agricultural economist argues that India's millet revival is demand-led rather than subsidy-led: 'Consumption of millets rose fastest in urban districts where millet procurement prices received no special support.'`,
     question: "Which of the following, if true, most strengthens the economist's argument?",
     options: [
-      "Millet production is heavily subsidised in several southern states",
-      "In the districts cited, millet consumption continued to rise after a health-trend campaign ended, while in comparable districts without rising consumption, no such campaign had run",
-      "Urban consumers perceive millets as healthier than refined grains",
-      "International Year of Millets campaigns increased global awareness"
+      "Millet production is heavily subsidised in several southern states of India",
+      "Millet consumption kept rising in districts where price support was later withdrawn",
+      "Urban households spend a larger share of their income on food than rural households do",
+      "International Year of Millets campaigns increased global awareness of the grain"
     ],
     answer: 1,
-    explanation: "The argument separates demand from price support. Option B shows demand rising without support and absent where consumption did not rise, tightening the demand-side attribution with a comparison. Perceptions (option C) describe a motive but do not test the subsidy claim; options A and D are consistent with either side.",
+    explanation: "The argument separates demand from price support. Option B shows consumption continuing to rise when support is removed, which is what a demand-led revival predicts. Options A and D are consistent with either account, and option C does not bear on the subsidy question.",
     difficulty: 'Hard'
   },
   {
@@ -376,13 +376,13 @@ export const questions: VAQuestion[] = [
     stimulus: `Over five years, a state's public libraries extended evening hours and added free Wi-Fi. Membership rose by 35 percent, but the number of books borrowed per member fell. Library staff say most of the new members are students who come to study their own material in the reading rooms.`,
     question: "All of the following can be inferred from the information above EXCEPT:",
     options: [
+      "The extended hours caused the total number of books borrowed across the state to decline.",
       "Some of the growth in membership has not been accompanied by more book borrowing.",
       "The fall in borrowing per member does not, by itself, show that the libraries are being used less.",
-      "Evening hours and Wi-Fi may have drawn in users who rarely borrow books.",
-      "The extended hours caused the total number of books borrowed across the state to decline."
+      "Evening hours and Wi-Fi may have drawn in users who rarely borrow books."
     ],
-    answer: 3,
-    explanation: "Membership grew 35 percent while borrowing per member fell. Total borrowing could therefore have fallen, stayed flat or even risen, and nothing links any change to the extended hours. The other three options are cautious readings the facts allow. This is the EXCEPT format, which CAT has used in its inference questions.",
+    answer: 0,
+    explanation: "Membership grew 35 percent while borrowing per member fell. Total borrowing could therefore have fallen, stayed flat or even risen, and nothing links any change to the extended hours. The other three statements are cautious readings the facts allow. This is the EXCEPT format, which CAT also uses in its inference questions.",
     difficulty: 'Hard'
   },
   {
@@ -391,13 +391,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A city police department credits its new predictive-policing software for a 20 percent drop in burglaries, noting that the software directs patrols to blocks where past incidents cluster.`,
     question: "Which of the following, if true, most undermines the department's attribution of the drop to the software?",
     options: [
-      "Burglary rates also fell in cities without such software",
-      "In the same period, a widely publicised sting operation had led to the arrest of an organised burglary ring responsible for a large share of the city's break-ins",
-      "The software's vendor claims accuracy of over 90 percent",
-      "Some officers distrust algorithmic patrol assignments"
+      "Residential burglary is a small share of all property crime in the city",
+      "The software vendor claims accuracy of over 90 percent in predicting hotspots",
+      "A sting operation had meanwhile led to the arrest of a ring behind a large share of break-ins",
+      "Some officers say they distrust algorithmic patrol assignments"
     ],
-    answer: 1,
-    explanation: "Option B supplies a specific alternative cause accounting for a large share of the outcome, a stronger challenge than the general trend in options A, which leaves open that the software still caused this city's larger drop. Vendor claims and officer sentiment are irrelevant to attribution.",
+    answer: 2,
+    explanation: "Option C supplies a specific alternative cause that could account for a large share of the fall. Option A says nothing about the drop, option B is a vendor claim and option D reports sentiment. None of these bears on attribution.",
     difficulty: 'Hard'
   },
   {
@@ -421,13 +421,13 @@ export const questions: VAQuestion[] = [
     stimulus: `After a rule required restaurants to display calorie counts, a study of 400 outlets found that average calories per order fell by 3 percent at chain restaurants and did not change at standalone restaurants. Several chains also reformulated dishes to cut calories around the time the rule came in. Standalone restaurants made no menu changes.`,
     question: "Which one of the following can be most reasonably inferred?",
     options: [
-      "Displaying calorie counts lowers the calories ordered at all restaurants.",
       "The fall at chain restaurants may be partly due to menu changes rather than to customers choosing differently.",
+      "Displaying calorie counts lowers the calories ordered at all restaurants.",
       "Customers of standalone restaurants ignore calorie counts.",
       "Food at chain restaurants is generally healthier than food at standalone restaurants."
     ],
-    answer: 1,
-    explanation: "Two things changed at chains at the same time, labels and recipes, so the fall cannot be credited wholly to customer behaviour. Option A generalises, C reads 'no change in orders' as 'customers ignore the labels' and D compares healthiness, which the study does not.",
+    answer: 0,
+    explanation: "Two things changed at chains at the same time, labels and recipes, so the fall cannot be credited wholly to customer behaviour. The claim about all restaurants generalises, the claim that standalone customers ignore labels reads 'no change in orders' as indifference, and the comparison of healthiness is not something the study measures.",
     difficulty: 'Moderate'
   },
   {
@@ -437,12 +437,12 @@ export const questions: VAQuestion[] = [
     question: "Which one of the following can be most reasonably inferred from the survey?",
     options: [
       "Work experience makes candidates more employable but also more anxious.",
-      "Among the surveyed students, higher stress during placements did not stop experienced students from getting more offers.",
       "Students who come straight from college are less ambitious about placements.",
+      "Among the surveyed students, higher stress during placements did not stop experienced students from getting more offers.",
       "Stress during placement season reduces the number of offers a student receives."
     ],
-    answer: 1,
-    explanation: "The survey only reports two co-occurring facts. Option B restates them without adding a cause. Option A asserts that experience causes both outcomes, C reverses the stated relation without evidence, and D brings in ambition, which the survey never measures.",
+    answer: 2,
+    explanation: "The survey only reports two co-occurring facts, and the correct option restates them without adding a cause. The claim that experience causes both outcomes is a causal leap, the claim about stress lowering offers reverses the stated relation without evidence, and ambition is never measured.",
     difficulty: 'Moderate'
   },
   {
@@ -451,13 +451,13 @@ export const questions: VAQuestion[] = [
     stimulus: `An education minister defends a steep cut in university research grants: 'Our universities produce thousands of papers that nobody reads. Redirecting grant money to teaching will serve students better than funding unread research.'`,
     question: "Which of the following, if true, most weakens the minister's case?",
     options: [
-      "Some university research papers are cited thousands of times",
-      "Universities with stronger research output attract better faculty, and their students outperform peers on independent assessments",
-      "Most students say they value teaching quality over research prestige",
-      "The private sector funds a growing share of research in other countries"
+      "Some university research papers are cited thousands of times by other scholars",
+      "Most students say they value teaching quality over the research prestige of their university",
+      "The private sector funds a growing share of university research in other countries",
+      "Universities with stronger research output attract better faculty, and their students score higher on independent tests"
     ],
-    answer: 1,
-    explanation: "The minister assumes research spending does not serve students. Option B links research strength to faculty quality and student outcomes, showing the two goals are coupled rather than competing. Option A addresses readership, not the student-benefit claim; options C and D are consistent with the minister's case.",
+    answer: 3,
+    explanation: "The minister assumes research spending does not serve students. Option D links research strength to faculty quality and student outcomes, showing the two goals are coupled rather than competing. Option A addresses readership, not the student-benefit claim; options B and C are consistent with the minister's case.",
     difficulty: 'Hard'
   },
   {
@@ -467,12 +467,12 @@ export const questions: VAQuestion[] = [
     question: "Which of the following is best supported by the exchange?",
     options: [
       "Trains are faster than they were five years ago",
-      "The punctuality gains claimed by the ministry may reflect relaxed schedules rather than improved operations",
       "The passenger association opposes railway modernisation",
+      "The punctuality gains claimed by the ministry may reflect relaxed schedules rather than improved operations",
       "Nine minutes is an insignificant improvement"
     ],
-    answer: 1,
-    explanation: "If scheduled times were padded by fifteen minutes while arrivals improved by nine, the metric can improve without any true operational gain, which is option B. The passage does not establish actual speed, the association's broader views, or a significance judgment.",
+    answer: 2,
+    explanation: "If scheduled times were padded by fifteen minutes while arrivals improved by nine, the metric can improve without any true operational gain, which is option C. The passage does not establish actual speed, the association's broader views, or a significance judgment.",
     difficulty: 'Moderate'
   },
   {
@@ -487,7 +487,7 @@ export const questions: VAQuestion[] = [
       "Reading long texts holds attention better than watching short videos."
     ],
     answer: 2,
-    explanation: "She denies a decline in capacity and points to a rise in distractions, which is exactly option C. Option A overreaches since she never calls the platforms harmless, B turns 'drew the same complaint' into 'always baseless', and D compares media, which she does not do.",
+    explanation: "She denies a decline in capacity and points to a rise in distractions, which the correct option expresses. The claim that the platforms are harmless overreaches, 'always baseless' stretches 'drew the same complaint', and she never compares reading with video.",
     difficulty: 'Moderate'
   },
   {
@@ -496,13 +496,13 @@ export const questions: VAQuestion[] = [
     stimulus: `An economic adviser argues that India's semiconductor fabrication push will succeed where earlier electronics manufacturing drives stalled: 'The government has committed production-linked incentives, land and power at scale. The missing ingredient was always commitment, and that is now supplied.'`,
     question: "Which of the following, if true, most weakens the adviser's argument?",
     options: [
-      "Semiconductor fabrication requires ultrapure water in enormous quantities",
-      "Global experience shows fabrication success depends less on subsidies than on dense ecosystems of specialised suppliers, tool vendors and experienced process engineers, which take a decade or more to build",
-      "Several countries have announced their own chip incentive programmes",
-      "The earlier electronics drives were smaller in scale"
+      "Fabrication success depends on dense supplier and engineering ecosystems that take a decade or more to build",
+      "Semiconductor fabrication requires ultrapure water in very large quantities every day",
+      "Several other countries have announced their own incentive programmes for chip making",
+      "The earlier electronics manufacturing drives were smaller in scale than the current one"
     ],
-    answer: 1,
-    explanation: "The adviser claims commitment was the missing ingredient. Option B asserts the true bottleneck is an ecosystem that money cannot quickly buy, attacking the causal premise directly. Water requirements and foreign programmes are obstacles but do not rebut the commitment thesis as cleanly; option D supports the adviser.",
+    answer: 0,
+    explanation: "The adviser claims commitment was the missing ingredient. Option A asserts the true bottleneck is an ecosystem that money cannot quickly buy, attacking the causal premise directly. Water requirements and foreign programmes are obstacles but do not rebut the commitment thesis as cleanly; option D supports the adviser.",
     difficulty: 'Hard'
   },
   {
@@ -511,13 +511,13 @@ export const questions: VAQuestion[] = [
     stimulus: `In a city where taxi fares are fixed by law, drivers report that their earnings per hour are highest on rainy days and lowest on clear afternoons, although fares are the same on both. Ride requests roughly double when it rains.`,
     question: "Which one of the following best explains the drivers' reports?",
     options: [
-      "With more requests, drivers spend less time idle between rides, so their earnings per hour rise even though fares are fixed.",
       "Drivers work longer hours when it rains.",
       "Passengers tip more generously when it rains.",
+      "With more requests, drivers spend less time idle between rides, so their earnings per hour rise even though fares are fixed.",
       "Fixed fares guarantee that earnings are the same every day."
     ],
-    answer: 0,
-    explanation: "Earnings per hour depend on fare per ride and on how many rides fit in an hour. Fares are fixed, but doubled demand shortens idle time, so A explains the gap. Longer hours would not change earnings per hour, tips are not mentioned, and D contradicts the drivers' reports.",
+    answer: 2,
+    explanation: "Earnings per hour depend on fare per ride and on how many rides fit in an hour. Fares are fixed, but doubled demand shortens idle time, which explains the gap. Longer hours would not change earnings per hour, tips are not mentioned, and the last option contradicts the drivers' reports.",
     difficulty: 'Moderate'
   },
   {
@@ -542,12 +542,12 @@ export const questions: VAQuestion[] = [
     question: "Which one of the following is best supported by the information above?",
     options: [
       "Incidents of harassment on the metro fell by about 40 percent.",
-      "The reported 40 percent fall is weak evidence that incidents of harassment fell, because what was counted may have changed with the helpline.",
       "The women-only coach has failed to reduce harassment.",
-      "The authority altered its figures deliberately to show success."
+      "The authority altered its figures deliberately to show success.",
+      "The reported 40 percent fall is weak evidence that incidents of harassment fell, because what was counted may have changed with the helpline."
     ],
-    answer: 1,
-    explanation: "The authority measured complaints, not incidents, and the channel for complaints changed. So the fall may reflect reporting, not harassment, and B is the careful reading. Option A accepts the figure at face value. C and D go further than the commuter group's point, which questions the measure, not the coach and not the authority's honesty.",
+    answer: 3,
+    explanation: "The authority measured complaints, not incidents, and the channel for complaints changed. So the fall may reflect reporting, not harassment, which is the careful reading. Accepting the 40 percent as a fall in incidents ignores this. The claims that the coach has failed or that the authority altered figures go beyond the commuter group's point, which questions the measure.",
     difficulty: 'Hard'
   },
   {
@@ -557,12 +557,12 @@ export const questions: VAQuestion[] = [
     question: "Which one of the following is best supported by the information above?",
     options: [
       "The goddess version is the oldest of the three.",
-      "Which version is told appears to vary with generation, and seems less fixed for people living away from the community.",
       "The boatman in the story was a real person.",
+      "Which version is told appears to vary with generation, and seems less fixed for people living away from the community.",
       "Younger residents have stopped believing in the goddess."
     ],
-    answer: 1,
-    explanation: "The facts give a generational pattern and a looser pattern among those who left, which is B. Nothing dates the goddess version, nothing speaks to the boatman's reality, and a version being told less says nothing about belief.",
+    answer: 2,
+    explanation: "The facts give a generational pattern and a looser pattern among those who left, which the correct option states. Nothing dates the goddess version, nothing speaks to the boatman's reality, and a version being told less says nothing about belief.",
     difficulty: 'Moderate'
   },
   {
@@ -572,12 +572,12 @@ export const questions: VAQuestion[] = [
     question: "All of the following are consistent with the findings above EXCEPT:",
     options: [
       "The short-term fall in thefts may have had causes other than the harsher laws.",
+      "Harsher sentencing laws have been shown never to deter theft.",
       "The data do not demonstrate any lasting deterrent effect of harsher laws.",
-      "Reported thefts and actual thefts may differ.",
-      "Harsher sentencing laws have been shown never to deter theft."
+      "Reported thefts and actual thefts may differ."
     ],
-    answer: 3,
-    explanation: "The findings show a short-lived fall followed by no effect, with a rival cause in the form of larger police budgets. They cannot show that harsher laws never deter, since a two-year fall was in fact observed. Options A to C are all things the data leave open or support.",
+    answer: 1,
+    explanation: "The findings show a short-lived fall followed by no effect, with a rival cause in the form of larger police budgets. They cannot show that harsher laws never deter, since a two-year fall was observed. The other three statements are all things the data leave open or support.",
     difficulty: 'Hard'
   },
   {
@@ -586,13 +586,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A software firm abolished performance rankings and saw resignations among its highest-rated engineers triple, while resignations among average performers fell by half. The firm's HR head concluded that rankings had been functioning as a retention tool for top performers.`,
     question: "Which of the following is most strongly supported?",
     options: [
-      "Abolishing rankings was a mistake",
       "Whatever else rankings did, they appear to have contributed to keeping top-rated engineers at the firm",
+      "Abolishing rankings was a mistake",
       "Average performers disliked rankings more than top performers did",
       "The firm's top engineers left to found startups"
     ],
-    answer: 1,
-    explanation: "The post-abolition divergence in resignations supports the HR head's modest causal reading for top performers, which is option B. Whether abolition was a mistake overall requires weighing both groups, which the passage cannot settle; preferences and destinations are unreported.",
+    answer: 0,
+    explanation: "The post-abolition divergence in resignations supports the HR head's modest causal reading for top performers, which is option A. Whether abolition was a mistake overall requires weighing both groups, which the passage cannot settle; preferences and destinations are unreported.",
     difficulty: 'Moderate'
   },
   {
@@ -616,12 +616,12 @@ export const questions: VAQuestion[] = [
     stimulus: `A hospital found that patients discharged on Fridays were readmitted within a week more often than patients discharged on other days. Fewer pharmacists and social workers are on duty at the hospital over weekends.`,
     question: "All of the following are consistent with the information above EXCEPT:",
     options: [
+      "Friday discharges are readmitted solely because the hospital is understaffed on weekends.",
       "Weekend staffing may affect the support patients get after discharge.",
       "Patients discharged on Fridays may be sicker on average than other patients.",
-      "Friday discharges are readmitted solely because the hospital is understaffed on weekends.",
       "Readmission rates may differ by the day of discharge."
     ],
-    answer: 2,
+    answer: 0,
     explanation: "The data permit staffing as one explanation but do not exclude others, such as sicker patients. 'Solely' turns a possible cause into the only cause, which the facts cannot support. The remaining options are all open possibilities.",
     difficulty: 'Hard'
   },
@@ -632,12 +632,12 @@ export const questions: VAQuestion[] = [
     question: "Which of the following is best supported by the passage?",
     options: [
       "The slogan was false advertising",
-      "The qualities that attract tourists to a destination can be destroyed by the tourism they attract",
       "The state should ban international tourists",
+      "The qualities that attract tourists to a destination can be destroyed by the tourism they attract",
       "Coral decline was caused by guesthouse closures"
     ],
-    answer: 1,
-    explanation: "The sequence links marketed unspoiledness to ecological and social damage from the resulting influx, which is the generalisation in option B. The slogan may have been true when coined; the ban and the reversed causation in option D are unsupported.",
+    answer: 2,
+    explanation: "The sequence links marketed unspoiledness to ecological and social damage from the resulting influx, which is the generalisation in option C. The slogan may have been true when coined; the ban and the reversed causation in option D are unsupported.",
     difficulty: 'Moderate'
   },
   {
@@ -646,13 +646,13 @@ export const questions: VAQuestion[] = [
     stimulus: `Two cities of similar size tried to cut plastic bag use. City P charged five rupees per bag, and use of single-use bags fell by 70 percent. City Q banned single-use bags and fined shopkeepers, and use of single-use bags fell by 50 percent, though sales of thicker reusable plastic bags in City Q rose sharply.`,
     question: "Which one of the following is best supported by the information above?",
     options: [
-      "The 50 percent fall in single-use bags in City Q may overstate the fall in City Q's total plastic use.",
       "Charging for bags is more effective than banning them in every city.",
+      "The 50 percent fall in single-use bags in City Q may overstate the fall in City Q's total plastic use.",
       "Shopkeepers in City Q resisted the ban more than shopkeepers in City P.",
       "Residents of City P care more about the environment than residents of City Q."
     ],
-    answer: 0,
-    explanation: "The rise in thicker reusable bags suggests that some plastic use shifted rather than disappeared, which is what A says. B generalises from two cities, C invents resistance and D invents attitudes. None of these is in the data.",
+    answer: 1,
+    explanation: "The rise in thicker reusable bags suggests that some plastic use shifted rather than disappeared, which the correct option says. Generalising from two cities, inventing shopkeeper resistance and inventing resident attitudes all go beyond the data.",
     difficulty: 'Hard'
   },
   {
@@ -667,7 +667,7 @@ export const questions: VAQuestion[] = [
       "Hiring domestic help is wasteful for families."
     ],
     answer: 1,
-    explanation: "If tasks shift from unpaid family work to paid work, the same output is newly counted, so measured income rises without more being produced. That is B. Option A compares totals the scholars never compare, C proposes a policy, and D makes a value judgment.",
+    explanation: "If tasks shift from unpaid family work to paid work, the same output is newly counted, so measured income rises without more being produced. Comparing households with markets, proposing a wage for household work and calling hiring wasteful all go beyond the scholars' reasoning.",
     difficulty: 'Hard'
   },
   {
@@ -677,12 +677,12 @@ export const questions: VAQuestion[] = [
     question: "Which of the following is best supported by the passage?",
     options: [
       "The vehicle ban harmed the tigers",
-      "A change in observed wildlife sightings need not indicate a change in wildlife",
       "Electric shuttles are worse for the environment than private vehicles",
-      "Tigers prefer quiet habitats"
+      "Tigers prefer quiet habitats",
+      "A change in observed wildlife sightings need not indicate a change in wildlife"
     ],
-    answer: 1,
-    explanation: "The two rival readings share the lesson that observation depends on the observer's method, which is option B's modest claim. The passage cannot settle which reading is true, so options A and D outrun it; option C contradicts the evident intent of the policy without support.",
+    answer: 3,
+    explanation: "The two rival readings share the lesson that observation depends on the observer's method, which is option D's modest claim. The passage cannot settle which reading is true, so options A and C outrun it; option B contradicts the evident intent of the policy without support.",
     difficulty: 'Moderate'
   },
   {
@@ -692,12 +692,12 @@ export const questions: VAQuestion[] = [
     question: "Which one of the following is most strongly suggested by the information above?",
     options: [
       "Lengthening scheduled times made the aircraft fly faster.",
-      "Passengers do not care whether flights arrive on time.",
       "The improved on-time rate may reflect easier targets rather than faster actual journeys.",
+      "Passengers do not care whether flights arrive on time.",
       "The airline's operational efficiency has declined."
     ],
-    answer: 2,
-    explanation: "A flight counts as on time against its schedule. If the schedule gets ten minutes longer, more flights qualify without any change in actual speed, so C fits. Options A and B conflict with the logic or go beyond the survey, and D has no support either way.",
+    answer: 1,
+    explanation: "A flight counts as on time against its schedule. If the schedule gets ten minutes longer, more flights qualify without any change in actual speed. Aircraft flying faster and passengers not caring about punctuality are not supported, and a decline in efficiency has no support either way.",
     difficulty: 'Moderate'
   },
   {
@@ -706,13 +706,13 @@ export const questions: VAQuestion[] = [
     stimulus: `After a fourth operator entered a country's mobile market, data prices fell by 30 percent in the first year. In the next two years prices stopped falling, even though the new operator's subscriber base kept growing. Two older operators merged in the third year.`,
     question: "Which one of the following is the most reasonable reading of the information above?",
     options: [
-      "The merger may have weakened the competitive pressure that the new entrant had created.",
       "A new entrant has no lasting effect on prices.",
       "Prices will begin to rise again in the fourth year.",
-      "The new operator has been unprofitable."
+      "The new operator has been unprofitable.",
+      "The merger may have weakened the competitive pressure that the new entrant had created."
     ],
-    answer: 0,
-    explanation: "Prices stopped falling after the merger while the entrant kept growing, so a reduction in competition is a plausible reading. Option B overstates 'no lasting effect', C forecasts, and D speaks about profit, for which there is no information.",
+    answer: 3,
+    explanation: "Prices stopped falling after the merger while the entrant kept growing, so a reduction in competition is a plausible reading. 'No lasting effect' overstates, a forecast of rising prices goes beyond the data, and nothing is said about the entrant's profit.",
     difficulty: 'Hard'
   },
   {
@@ -722,11 +722,11 @@ export const questions: VAQuestion[] = [
     question: "Which one of the following is LEAST supported by the scholars' view?",
     options: [
       "Advertisers adapted their messages to the cultural references of readers.",
-      "Advertising can shape attitudes to a product beyond persuading people to buy it.",
       "Vernacular newspapers refused to carry advertisements written in English.",
+      "Advertising can shape attitudes to a product beyond persuading people to buy it.",
       "Readers were encouraged to see imported goods as compatible with their own values."
     ],
-    answer: 2,
+    answer: 1,
     explanation: "Nothing in the scholars' view concerns newspapers refusing English advertisements. The other three options restate what the scholars say about adaptation, wider influence and compatibility with local values.",
     difficulty: 'Moderate'
   },
@@ -736,13 +736,13 @@ export const questions: VAQuestion[] = [
     stimulus: `A chess federation replaced knockout tournaments with round-robin leagues. Upset victories by lower-rated players fell sharply, and sponsors complained that the drama had gone out of the game, even as the federation noted that the final standings now reflected players' true strength far more reliably.`,
     question: "Which of the following is best supported by the passage?",
     options: [
-      "Knockout formats are unfair to lower-rated players",
       "Formats that maximise the chance of upsets and formats that best measure skill are not the same",
+      "Knockout formats are unfair to lower-rated players",
       "Sponsors should have no say in tournament design",
       "Round-robin leagues are cheaper to organise"
     ],
-    answer: 1,
-    explanation: "The passage shows fewer upsets alongside more reliable measurement, so the two goals diverge, which is option B. Fairness to underdogs, sponsors' rights and costs are not addressed.",
+    answer: 0,
+    explanation: "The passage shows fewer upsets alongside more reliable measurement, so the two goals diverge, which is option A. Fairness to underdogs, sponsors' rights and costs are not addressed.",
     difficulty: 'Moderate'
   },
   {
@@ -753,11 +753,11 @@ export const questions: VAQuestion[] = [
     options: [
       "Literal translation is preferable to adaptation.",
       "Translators should avoid idioms altogether.",
-      "A translator's skill lies in judging when to keep the source's flavour and when to adapt it.",
-      "Local equivalents make a translated text more trustworthy."
+      "Local equivalents make a translated text more trustworthy.",
+      "A translator's skill lies in judging when to keep the source's flavour and when to adapt it."
     ],
-    answer: 2,
-    explanation: "The critic calls both extremes failures and locates quality in the decisions between them, which is C. Options A and D each endorse one extreme, and B ignores the point that idioms must be handled, not avoided.",
+    answer: 3,
+    explanation: "The critic calls both extremes failures and locates quality in the decisions between them, which the correct option states. Preferring literal translation or local equivalents each endorses one extreme, and avoiding idioms ignores the point that they must be handled.",
     difficulty: 'Moderate'
   }
 ];
