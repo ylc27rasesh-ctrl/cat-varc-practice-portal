@@ -110,7 +110,10 @@
 .tone-meaning { font-size: 13px; line-height: 20px; margin: 0 0 8px; }
 .tone-syn { font-size: 13px; line-height: 20px; margin: 0 0 8px; }
 .tone-syn-label { font-weight: 600; color: #3f6f62; }
-.tone-example { font-size: 13px; line-height: 20px; color: var(--ds-ink-2); font-style: italic; margin: 0; }
+.tone-examples { margin: 0; padding: 0 0 0 4px; list-style: none; display: grid; gap: 6px; }
+.tone-example { font-size: 13px; line-height: 20px; color: var(--ds-ink-2); font-style: italic; margin: 0; padding-left: 14px; position: relative; }
+.tone-example::before { content: "\201C"; position: absolute; left: 0; color: #3f6f62; font-style: normal; }
+.tone-example::after { content: "\201D"; color: #3f6f62; font-style: normal; }
 
 .file-nav { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 8px; }
 .file-nav a {
@@ -126,4 +129,4 @@
     background: var(--ds-teal);
     color: #fff;
     border-color: var(--ds-teal);
-}
+               }
