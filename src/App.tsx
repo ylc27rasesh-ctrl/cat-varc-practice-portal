@@ -14,6 +14,13 @@ function AnswerBlock({ options, answer, explanation }: { options: string[]; answ
     </div>;
 }
 
+const FREQ: Record<VAQuestion['type'], { short: string; rank: number }> = {
+    Inference: { short: 'CAT pattern: most frequent', rank: 0 },
+    Weaken: { short: 'CAT pattern: occasional', rank: 1 },
+    Strengthen: { short: 'CAT pattern: occasional', rank: 2 },
+    Assumption: { short: 'CAT pattern: not tracked separately', rank: 3 },
+};
+
 function QuestionCard({ q }: { q: VAQuestion }) {
     const [open, setOpen] = useState(false);
     return <article className="q-card">
@@ -21,6 +28,8 @@ function QuestionCard({ q }: { q: VAQuestion }) {
             <span className="q-number">{q.id}</span>
             <span className="q-tag">{q.type}</span>
             <span className="q-tag q-tag-muted">{q.difficulty}</span>
+            <span className="q-tag q-tag-muted">{FREQ[q.type].short}</span>
+            {/EXCEPT/.test(q.question) && <span className="q-tag q-tag-muted">EXCEPT format</span>}
         </div>
         <p className="q-stimulus">{q.stimulus}</p>
         <p className="q-stem">{q.question}</p>
@@ -115,11 +124,30 @@ const TYPE_OPTIONS = [
 
 function Questions() {
     const [filter, setFilter] = useState('All');
-    const shown = filter === 'All' ? questions : questions.filter(q => q.type === filter);
+    const [order, setOrder] = useState('number');
+    const base = filter === 'All' ? questions : questions.filter(q => q.type === filter);
+    const shown = order === 'number' ? base : [...base].sort((x, y) => FREQ[x.type].rank - FREQ[y.type].rank || x.id - y.id);
     return <>
-        <Group label="50 argument questions" heading>
-            <Paragraph>A mix of inference, assumption, strengthen and weaken items at moderate to hard CAT level. Answers and full reasoning sit behind each question.</Paragraph>
+        <Group label="50 argument questions, benchmarked to CAT's past papers" heading>
+            <Paragraph>Fifty inference, assumption, strengthen and weaken items at moderate to hard CAT level. The mix and question wording are benchmarked against past CAT papers (2021 to 2025), where inference questions dominate, followed by weaken and then strengthen. Answers and full reasoning sit behind each question.</Paragraph>
+            <div style={{ background: "rgba(37,31,33,0.04)", border: "1px solid rgba(37,31,33,0.12)", borderRadius: 12, padding: "14px 16px", margin: "12px 0 16px", fontSize: "0.92em", lineHeight: 1.5 }}>
+                <h3 style={{ fontSize: "1em", margin: "10px 0 4px" }}>What past CAT papers show</h3>
+                <ul>
+                    <li>Every VARC section in 2021 to 2025 had 24 questions: 16 from four reading passages and 8 verbal ability questions (summary, completion, odd one out, jumbles).</li>
+                    <li>One question bank that tags all 240 VARC questions from these 15 slots lists 70 reading inference questions, 58 detail or fact questions, 41 para summary, 20 main idea and 13 strengthen or weaken. Another analysis puts inference at about 8 of the 16 reading questions in an average slot (8.3 in 2025).</li>
+                    <li>Of the 13 strengthen or weaken questions, about 9 are worded as weaken, undermine or invalidate and about 4 as strengthen, complement or extend.</li>
+                    <li>Inference stems often use the EXCEPT format ("all of the following can be inferred EXCEPT"), so several questions below use it.</li>
+                </ul>
+                <h3 style={{ fontSize: "1em", margin: "10px 0 4px" }}>What changed in this tab</h3>
+                <p>Before: 14 inference, 13 assumption, 10 strengthen, 13 weaken. Now: 30 inference, 6 assumption, 5 strengthen, 9 weaken. Sixteen questions were replaced with new inference items; the other 34 are unchanged.</p>
+                <h3 style={{ fontSize: "1em", margin: "10px 0 4px" }}>How close this bank is to CAT</h3>
+                <p>Close: the inference-heavy mix; the stem wording ("can be inferred", "would most likely agree", "if true, would weaken", EXCEPT); four options per question; and wrong options built on the traps CAT uses (too extreme, out of scope, reversed, true but irrelevant).</p>
+                <p>Not close: CAT places these questions inside 400 to 500 word passages, while the stimuli here run 40 to 90 words, so reading load and stamina are lower. CAT has no standalone assumption items, and its answer options are often longer and subtler. Use this bank for reasoning drills and use the passages tab for reading practice. This is a qualitative comparison, not a measured score.</p>
+                <p>The counts come from third-party question banks tagging past papers, not from CAT itself.</p>
+                <p style={{ fontSize: "0.88em", overflowWrap: "anywhere", opacity: 0.75 }}>Sources: thembaroom.com/cat/study/reading-comprehension; scorebuddy.in/cat/pyq and its inference and strengthen-weaken pages; imsindia.com/blog/cat/cat-exam-analysis-2025; collegedunia.com/exams/cat/paper-analysis-for-varc. Checked 4 November 2026.</p>
+            </div>
             <ChoiceRow label="Filter by type" options={TYPE_OPTIONS} value={filter} onChange={setFilter} />
+            <ChoiceRow label="Order" options={[{ value: 'number', label: 'By number' }, { value: 'freq', label: 'Most frequent in past CAT first' }]} value={order} onChange={setOrder} />
         </Group>
         {shown.map(q => <QuestionCard key={q.id} q={q} />)}
     </>;
